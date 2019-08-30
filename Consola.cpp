@@ -11,7 +11,20 @@ class Consola{
 	public: 
 		Consola(string usuario, string loggername){
 			this->usuario;
-			logger = new Logger(loggername);
+			logger = new Logger(usuario, loggername);
+			logger->setNumlog();
 		}
+		
+		cmd(){
+			leerArchivo();
+			while(true){
+				string comando;
+				cout<<usuario<<">";
+				cin>>comando;
+				
+				l	
+			}
+		}
+		
 };
 #endif

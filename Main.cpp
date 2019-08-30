@@ -15,6 +15,7 @@ int main(){
 		cout<<"Mi ex: "<<e.what()<<endl;
 	}
 	
+	delete consola;
 	return 0;
 }
 
