@@ -8,11 +8,12 @@ int main(){
 	cout<<"Ingrese Usuario: ";
 	cin>>usuario;
 	Consola* consola = new Consola(usuario, "logs.bin");
+	//consola->cmd();
 	
 	try{
 		consola->cmd();
 	}catch(MiException& e){
-		cout<<"Mi ex: "<<e.what()<<endl;
+		cout<<e.what()<<endl;
 	}
 	
 	delete consola;
