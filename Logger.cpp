@@ -20,7 +20,7 @@ class Logger{
 		
 		~Logger(){
 		for(int x = 0; x < logs.size(); x++)
-			logs.at(x)
+			logs.at(x)->~Logs();
 		}
 		
 		agregarVector(){
