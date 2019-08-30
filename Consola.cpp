@@ -23,6 +23,7 @@ class Consola{
 					logger->listar();
 					cout<<endl;
 				}else if(comando == "exit"){
+					~logger();
 					break;
 				}else{
 					logger->escribirLogs(comando);

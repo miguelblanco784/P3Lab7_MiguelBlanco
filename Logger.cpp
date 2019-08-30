@@ -18,7 +18,10 @@ class Logger{
 			cargarLogs();
 		}
 		
-		~Logger(){}
+		~Logger(){
+		for(int x = 0; x < logs.size(); x++)
+			logs.at(x)
+		}
 		
 		agregarVector(){
 			
