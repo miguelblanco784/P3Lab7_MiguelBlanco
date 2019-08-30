@@ -13,7 +13,7 @@ int main(){
 	try{
 		consola->cmd();
 	}catch(MiException& e){
-		cout<<e.what()<<endl;
+		cout<<" "<<e.what()<<endl;
 	}
 	
 	delete consola;
